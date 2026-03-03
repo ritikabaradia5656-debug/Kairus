@@ -1,0 +1,588 @@
+/* ================= ROOT VARIABLES ================= */
+
+:root {
+    --black: #1E1F20;
+    --main-white: #FFF;
+    --secondary-white: #F7F7F7;
+    --text-colour: #525252;
+    --secondary-colour: #434547;
+    --sub-text-gray: #8B8B8B;
+    --gold: #8E673E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: var(--main-white);
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: var(--main-white);
+    padding: 0 120px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-left: 100px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-left: auto;
+}
+
+.nav-icons img {
+    width: 24px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 799px;
+    background: url("./Assets/first.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #F5F4EB;
+    margin-bottom: 32px;
+    text-transform: capitalize;
+}
+
+.hero-content p {
+    font-size: 24px;
+    line-height: 32px;
+    color: #F5F4EB;
+}
+
+
+/* ================= BREADCRUMB ================= */
+
+.breadcrumb {
+    padding: 40px 120px 0 120px;
+    font-size: 16px;
+    color: var(--text-colour);
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--text-colour);
+}
+
+.breadcrumb span {
+    color: var(--gold);
+}
+
+
+/* ================= GIFTING SECTION ================= */
+
+.gifting-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px;
+    gap: 80px;
+}
+
+/* LEFT TEXT */
+
+.gifting-content {
+    flex: 1;
+    max-width: 700px;
+}
+
+.gifting-content h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 56px;
+    font-weight: 500;
+    color: var(--gold);
+    margin-bottom: 32px;
+    text-transform: capitalize;
+}
+
+.gifting-content p {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--text-colour);
+    text-transform: capitalize;
+}
+
+
+/* RIGHT IMAGE */
+
+.gifting-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gifting-image img {
+    width: 962px;
+    height: 894px;
+    object-fit: cover;
+
+    border-bottom-right-radius: 440px;
+
+    transform: rotate(180deg);   /* Rotation included */
+}
+
+/* ================= CUSTOM PROCESS SECTION ================= */
+
+.custom-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #F5F4E7;   /* Section background */
+}
+
+/* LEFT IMAGE */
+
+.process-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.process-image img {
+    width: 962px;
+    height: 894px;
+    object-fit: cover;
+
+    border-top-right-radius: 447px;
+}
+
+/* RIGHT CONTENT */
+
+.process-content {
+    flex: 1;
+    padding: 120px;
+    max-width: 722px;
+}
+
+/* HEADING */
+
+.process-content h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #8E673E;   /* Gold */
+
+    margin-bottom: 32px;
+}
+
+/* PARAGRAPH */
+
+.process-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #525252;   /* Dark gray */
+
+    margin-bottom: 24px;
+}
+/* ================= FULLY BESPOKE SECTION ================= */
+
+.bespoke-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 120px;
+}
+
+/* LEFT CONTENT */
+
+.bespoke-content {
+    flex: 1;
+    max-width: 722px;
+}
+
+.bespoke-content h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #8E673E;   /* Gold */
+
+    margin-bottom: 32px;
+}
+
+.bespoke-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #525252;
+
+    margin-bottom: 24px;
+}
+
+/* RIGHT IMAGE */
+
+.bespoke-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bespoke-image img {
+    width: 100%;
+    max-width: 1794px;
+    height: 894px;
+    object-fit: cover;
+}
+/* ================= DESIGN PROCESS SECTION ================= */
+
+.design-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #F5F4E7;   /* Section background */
+
+    padding: 120px;
+}
+
+/* LEFT IMAGE */
+
+.design-image {
+    flex: 1;
+}
+
+.design-image img {
+    max-width: 962px;
+    width: 100%;
+    height: auto;
+
+    border-top-right-radius: 447px;
+}
+
+/* RIGHT CONTENT */
+
+.design-content {
+    flex: 1;
+    max-width: 722px;
+}
+
+.design-content h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #8E673E;   /* Gold */
+
+    margin-bottom: 32px;
+}
+
+.design-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #525252;   /* Dark Gray */
+
+    margin-bottom: 24px;
+}
+/* ================= GIFT CARD SECTION ================= */
+
+.gift-card-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 120px;
+}
+
+/* LEFT CONTENT */
+
+.gift-card-content {
+    flex: 1;
+    max-width: 722px;
+}
+
+.gift-card-content h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #8E673E;   /* Gold */
+
+    margin-bottom: 32px;
+}
+
+.gift-card-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1%;
+    text-transform: capitalize;
+
+    color: #525252;   /* Dark Gray */
+
+    margin-bottom: 32px;
+}
+
+/* CTA LINK */
+
+.gift-card-link {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1px solid #8E673E;
+    color: #8E673E;
+}
+
+.gift-card-link:hover {
+    text-decoration: underline;
+}
+
+
+/* RIGHT IMAGE */
+
+.gift-card-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gift-card-image img {
+    width: 100%;
+    max-width: 1794px;
+    height: 894px;
+    object-fit: cover;
+}
+
+/* ================= INQUIRE BUTTON ================= */
+
+.inquire-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 224px;
+    height: 58px;
+
+    padding: 16px 24px;
+    gap: 16px;
+
+    border-radius: 44px;
+
+    background: #8E673E;
+    color: #FFF;
+
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    opacity: 1;
+    margin-bottom: 60px; 
+}
+
+
+/* Hover (Optional subtle luxury effect) */
+.inquire-btn:hover {
+    background: #6f4f2d;
+}
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #F5F4E7;
+    padding: 60px 120px;
+    background-image: url("./Assets/kairaus-one.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    gap: 60px;
+}
+
+.footer-col h3 {
+    color: var(--gold);
+    font-family: "Manrope";
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: var(--text-colour);
+    line-height: 24px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: var(--text-colour);
+    font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+    color: var(--black);
+}
+
+
+/* SOCIAL ICONS */
+
+.socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 15px;
+}
+
+.newsletter-box input {
+    width: 310px;
+    height: 51px;
+    border-radius: 3px;
+    border: 1px solid #D6D6D6;
+    padding: 0 16px;
+    font-size: 16px;
+}
+
+.newsletter-box button {
+    width: 136px;
+    height: 53px;
+    border-radius: 37px;
+    border: 1px solid var(--gold);
+    background-color: var(--gold);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.newsletter-box button:hover {
+    background-color: #6f4f2d;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-colour);
+    font-size: 14px;
+}
