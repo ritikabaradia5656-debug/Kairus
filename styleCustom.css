@@ -138,17 +138,21 @@ body {
 
 .gifting-section {
     display: flex;
+    align-items: stretch;
     justify-content: space-between;
-    align-items: center;
+
     padding: 120px;
     gap: 80px;
 }
 
 /* LEFT TEXT */
-
 .gifting-content {
     flex: 1;
     max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .gifting-content h2 {
@@ -170,6 +174,7 @@ body {
 
 /* RIGHT IMAGE */
 
+
 .gifting-image {
     flex: 1;
     display: flex;
@@ -177,35 +182,53 @@ body {
 }
 
 .gifting-image img {
-    width: 962px;
-    height: 894px;
+    width: 100%;
+    max-width: 962px;
+    height: 100%;
+
     object-fit: cover;
+    object-position: center;
 
-    border-bottom-right-radius: 440px;
-
-    transform: rotate(180deg);   /* Rotation included */
+    border-bottom-left-radius: 440px;
 }
-
 /* ================= CUSTOM PROCESS SECTION ================= */
+.custom-process-container {
+    max-width: 1920px;
+    min-height: 894px;
 
-.custom-process {
+    margin: 0 auto;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+}
+.custom-process {
+    width: 100%;        /* full frame width instead of fixed 1920 */
+    min-height: 894px;  /* keeps approximate section height */
 
-    background: #F5F4E7;   /* Section background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #F5F4E7;
+
+    padding: 120px;
+    gap: 80px;
+
+    opacity: 1;
 }
 
 /* LEFT IMAGE */
 
-.process-image {
-    flex: 1;
+.process-image{
+    width: 962px;
+    height: 894px;
     overflow: hidden;
 }
 
-.process-image img {
-    width: 962px;
-    height: 894px;
+.process-image img{
+    width: 100%;
+    height: 100%;
+
     object-fit: cover;
 
     border-top-right-radius: 447px;
@@ -213,12 +236,16 @@ body {
 
 /* RIGHT CONTENT */
 
-.process-content {
-    flex: 1;
-    padding: 120px;
-    max-width: 722px;
-}
+.process-content{
+    flex:1;
+    max-width:722px;
 
+    margin-left:120px;
+
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
 /* HEADING */
 
 .process-content h2 {
@@ -229,13 +256,10 @@ body {
     letter-spacing: 0.1%;
     text-transform: capitalize;
 
-    color: #8E673E;   /* Gold */
-
-    margin-bottom: 32px;
+    color: #8E673E;
 }
 
 /* PARAGRAPH */
-
 .process-content p {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -244,9 +268,7 @@ body {
     letter-spacing: 0.1%;
     text-transform: capitalize;
 
-    color: #525252;   /* Dark gray */
-
-    margin-bottom: 24px;
+    color: #525252;
 }
 /* ================= FULLY BESPOKE SECTION ================= */
 
