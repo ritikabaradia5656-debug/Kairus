@@ -471,7 +471,7 @@ body {
 /* ================= FOOTER ================= */
 
 .footer {
-    background: #F5F4E7;
+    background: #F0EFE4;
     padding: 60px 120px;
     background-image: url("./Assets/kairaus-one.svg");
     background-repeat: no-repeat;
@@ -570,10 +570,16 @@ body {
 .footer-bottom {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #8E673E;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #525252;
+    font-weight: 400; /* removes bold */
 }
 
 .footer-links {
@@ -585,4 +591,199 @@ body {
     text-decoration: none;
     color: var(--text-colour);
     font-size: 14px;
+}
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+.header {
+    padding: 0 40px;
+}
+
+.nav-links {
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+/* Sections stack */
+
+.gifting-section,
+.custom-process,
+.bespoke-section,
+.design-process,
+.gift-card-section {
+    flex-direction: column;
+    padding: 80px 40px;
+    gap: 40px;
+}
+
+/* Images responsive */
+
+.gifting-image img,
+.process-image img,
+.bespoke-image img,
+.design-image img,
+.gift-card-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Text alignment */
+
+.gifting-content,
+.process-content,
+.bespoke-content,
+.design-content,
+.gift-card-content {
+    max-width: 100%;
+}
+
+/* Headings smaller */
+
+.gifting-content h2,
+.process-content h2,
+.bespoke-content h2,
+.design-content h2,
+.gift-card-content h2 {
+    font-size: 40px;
+}
+
+.gifting-content p,
+.process-content p,
+.bespoke-content p,
+.design-content p,
+.gift-card-content p {
+    font-size: 20px;
+}
+
+.footer {
+    padding: 60px 40px;
+}
+
+.footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+/* Header */
+
+.header {
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: none; /* simple mobile approach */
+}
+
+/* Hero */
+
+.hero {
+    height: 500px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* Sections */
+
+.gifting-section,
+.custom-process,
+.bespoke-section,
+.design-process,
+.gift-card-section {
+    padding: 60px 20px;
+    gap: 30px;
+}
+
+/* Text sizes */
+
+.gifting-content h2,
+.process-content h2,
+.bespoke-content h2,
+.design-content h2,
+.gift-card-content h2 {
+    font-size: 32px;
+}
+
+.gifting-content p,
+.process-content p,
+.bespoke-content p,
+.design-content p,
+.gift-card-content p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Footer */
+
+.footer-container {
+    grid-template-columns: 1fr;
+}
+
+/* Newsletter */
+
+.newsletter-box input {
+    width: 100%;
+}
+
+.inquire-btn {
+    width: 100%;
+    max-width: 250px;
+}
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+.hero-content h1 {
+    font-size: 28px;
+}
+
+.hero-content p {
+    font-size: 16px;
+}
+
+.gifting-content h2,
+.process-content h2,
+.bespoke-content h2,
+.design-content h2,
+.gift-card-content h2 {
+    font-size: 26px;
+}
+
+.gifting-content p,
+.process-content p,
+.bespoke-content p,
+.design-content p,
+.gift-card-content p {
+    font-size: 16px;
+}
+
+.footer {
+    padding: 40px 20px;
+}
+
 }
