@@ -1,5 +1,10 @@
 /* ================= ROOT VARIABLES ================= */
-
+section img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
 :root {
     --black: #1E1F20;
     --main-white: #FFF;
@@ -179,6 +184,7 @@ body {
 
 
 .gifting-image{
+    
     width:50%;
 }
 
@@ -206,7 +212,7 @@ body {
 }
 .custom-process {
     width: 100%;        /* full frame width instead of fixed 1920 */
-    min-height: 894px;  /* keeps approximate section height */
+    height: 894px;  /* keeps approximate section height */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -218,21 +224,22 @@ body {
 /* LEFT IMAGE */
 
 .process-image{
-    width: 100%;
+        width:50%;
+
     height: 100%;
     overflow: hidden;
 }
 
 .process-image img{
-    width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
 /* RIGHT CONTENT */
 
 .process-content{
+    width: 50%;
+
     flex:1;
     max-width:722px;
 
@@ -315,6 +322,7 @@ body {
 /* RIGHT IMAGE */
 
 .bespoke-image {
+    width:50%;
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -328,32 +336,28 @@ body {
 }
 /* ================= DESIGN PROCESS SECTION ================= */
 
-.design-process {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: #F7F7F7;   /* Section background */
-
+.design-process{
+    display:flex;
+    width:100%;
+    min-height:894px;
 }
 
-/* LEFT IMAGE */
-
-.design-image {
-    flex: 1;
+.design-image{
+    width:50%;
 }
 
-.design-image img {
-    max-width: 962px;
-    width: 100%;
-    height: auto;
+.design-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-/* RIGHT CONTENT */
-
-.design-content {
-    flex: 1;
-    max-width: 722px;
+.design-content{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 120px;
 }
 
 .design-content h2 {
@@ -383,17 +387,20 @@ body {
 }
 /* ================= GIFT CARD SECTION ================= */
 
-.gift-card-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.gift-card-section{
+    display:flex;
+    width:100%;
+    min-height:894px;
 }
 
 /* LEFT CONTENT */
 
-.gift-card-content {
-    flex: 1;
-    max-width: 722px;
+.gift-card-content{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 120px;
 }
 
 .gift-card-content h2 {
@@ -438,17 +445,15 @@ body {
 
 /* RIGHT IMAGE */
 
-.gift-card-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+.gift-card-image{
+    width:50%;
 }
 
-.gift-card-image img {
-    width: 100%;
-    max-width: 1794px;
-    height: 894px;
-    object-fit: cover;
+
+.gift-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 /* ================= INQUIRE BUTTON ================= */
