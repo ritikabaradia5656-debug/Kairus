@@ -489,13 +489,28 @@ input, textarea {
 
     border-bottom: 1.5px solid var(--black);
 
-    .contact-form textarea::placeholder{
+}
+.contact-form textarea::placeholder{
 
     color: var(--sub-text-gray);
 
     font-size: 16px;
 
+    }
+
+
+.contact-form textarea::placeholder{
+    color:#525252;
 }
+.form-row input::placeholder{
+    
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+
+    color: #525252;
+
+    opacity: 1;
+
 }
 
 /* SUBMIT BUTTON */
