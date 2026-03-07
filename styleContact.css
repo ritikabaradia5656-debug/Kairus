@@ -524,11 +524,13 @@ input, textarea {
 
 display: flex;
 
-width: 749px;
+width: 100%;
 height: 63px;
 
 justify-content: center;
 align-items: center;
+align-self: center;
+
 
 border-radius: 8px;
 border: 1px solid #1E1F20;
