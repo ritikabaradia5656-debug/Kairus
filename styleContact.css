@@ -356,8 +356,8 @@ background: var(--main-white, #FFF);
     
     width: 382px;
     height: 201px;
-border: 1px solid var(--sub-tebt-gray, #8B8B8B);
-background: var(--secondary-white, #F7F7F7);
+    border: 1px solid var(--sub-tebt-gray, #8B8B8B);
+    background: var(--secondary-white, #F7F7F7);
 
     display: flex;
     flex-direction: column;   /* STACK vertically */
@@ -415,27 +415,20 @@ background: var(--secondary-white, #F7F7F7);
 
 /* CONTACT FORM CONTAINER SIZE */
 .contact-form{
-
 width: 811px;
 height: 686px;
 
 background: var(--secondary-white);
 
-padding-top: 40px;
-padding-left: 40px;
-padding-right: 40px;
-padding-bottom: 56px;
-
-box-sizing: border-box;
-
+padding: 40px 30px 64px 32px; /* match Figma */
 display: flex;
 flex-direction: column;
-
+margin-right: 110px;
 }
 
 .contact-form h3 {
 
-    margin-bottom: 30px;
+    margin-bottom: 56px;
     height: 35px;
     font-size: 32px;
 
@@ -449,14 +442,15 @@ flex-direction: column;
     display: flex;
 
     gap: 30px;
-    width: 100%;
+        width: 100%;
 
-    margin-bottom: 25px;
+
+    margin-bottom: 48px;
 }
 
 input, textarea {
 
-    width: 100%;
+    width: 363px;
     background: var(--secondary-white, #F7F7F7);
     padding: 12px 5px;
 
@@ -478,6 +472,9 @@ input, textarea {
 
     border: none;
     border-bottom: 1.5px solid #BAC2D1;
+    margin-bottom: 56px;
+
+    color: var(--text-colour, #525252);
 
     background: transparent;
 
@@ -505,48 +502,43 @@ input, textarea {
 
 .contact-form textarea::placeholder{
     color:#525252;
+    font-weight: 500;
+;
 }
-.form-row input::placeholder{
-    
-    font-family: "Inter", sans-serif;
+.form-row input{
+    display: flex;
+    height: 55px;
+    padding: 10px 0;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    width: 184px;
+    border: none;
+    border-bottom: 1px solid #939393;
+    background: transparent;
+
     font-size: 18px;
-
-    color: #525252;
-
-    opacity: 1;
-
+    font-family: "Inter", sans-serif;
 }
-
 
 /* SUBMIT BUTTON */
 
 .contact-form button{
-
-display: flex;
-
 width: 100%;
 height: 63px;
 
+display: flex;
 justify-content: center;
 align-items: center;
-align-self: center;
-
 
 border-radius: 8px;
 border: 1px solid #1E1F20;
 background: #1E1F20;
 
 color: #FFF;
-
-font-family: "Inter";
-font-size: 18px;
-
+font-size: 24px;
 cursor: pointer;
-
-margin-top: 190px;   /* EXACT gap from message box */
-
 }
-
 
 /* ================= FOOTER ================= */
 
