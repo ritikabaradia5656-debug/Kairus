@@ -545,6 +545,45 @@ font-weight:500;
     flex:1;
 }
 
+.form-group{
+position:relative;
+flex:1;
+}
+
+.form-group input,
+.form-group textarea{
+width:100%;
+border:none;
+border-bottom:1px solid #939393;
+outline:none;
+padding:10px 0;
+font-size:18px;
+background:transparent;
+}
+
+.form-group label{
+position:absolute;
+left:0;
+top:10px;
+color:var(--text-colour);
+font-size:18px;
+pointer-events:none;
+transition:0.3s;
+}
+
+.form-group label sup{
+color:#FF4141;
+font-size:18px;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label,
+.form-group textarea:focus + label,
+.form-group textarea:valid + label{
+top:-14px;
+font-size:14px;
+}
+
 
 /* SUBMIT BUTTON */
 
