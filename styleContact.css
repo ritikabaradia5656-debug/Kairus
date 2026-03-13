@@ -415,7 +415,7 @@ background: var(--main-white, #FFF);
 
 /* CONTACT FORM CONTAINER SIZE */
 .contact-form{
-width: 811px;
+width: 100%;
 height: 686px;
 
 background: var(--secondary-white);
