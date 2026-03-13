@@ -356,7 +356,7 @@ background: var(--main-white, #FFF);
     
     width: 382px;
     height: 201px;
-    border: 1px solid var(--sub-tebt-gray, #8B8B8B);
+    border: 1px solid var(--sub-text-gray, #8B8B8B);
     background: var(--secondary-white, #F7F7F7);
 
     display: flex;
@@ -474,13 +474,13 @@ input, textarea {
     border-bottom: 1.5px solid #BAC2D1;
     margin-bottom: 56px;
 
-    color: var(--text-colour, #525252);
+   color: var(--text-colour, #525252);
 
     background: transparent;
 
     resize: none;
 
-    font-family: "Inter", sans-serif;
+    font-family: Manrope;
     font-size: 18px;
 
 }
@@ -500,11 +500,15 @@ input, textarea {
     }
 
 
+.form-row input::placeholder,
 .contact-form textarea::placeholder{
-    color:#525252;
+    color: var(--text-colour, #525252);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
     font-weight: 500;
-;
+    line-height: 100%;
 }
+
 .form-row input{
     display: flex;
     height: 55px;
@@ -512,14 +516,35 @@ input, textarea {
     align-items: center;
     gap: 10px;
     flex: 1 0 0;
-    width: 184px;
+
     border: none;
     border-bottom: 1px solid #939393;
     background: transparent;
 
-    font-size: 18px;
+    color: var(--text-colour, #525252);
     font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
 }
+.input-group label{
+margin-bottom:0.5px;
+display:block;
+}
+
+.asterisk{
+color:#FF4141;
+font-family:"Inter", sans-serif;
+font-size:18px;
+font-weight:500;
+}
+.input-group{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
 
 /* SUBMIT BUTTON */
 
@@ -538,6 +563,9 @@ background: #1E1F20;
 color: #FFF;
 font-size: 24px;
 cursor: pointer;
+}
+.form-row input{
+width:100%;
 }
 
 /* ================= FOOTER ================= */
