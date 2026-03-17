@@ -1,4 +1,4 @@
-/* RESET */
+/* ================= RESET ================= */
 
 *{
 margin:0;
@@ -9,6 +9,7 @@ font-family:"Inter", sans-serif;
 
 body{
 background:#fff;
+color:#333;
 }
 
 /* ================= HEADER ================= */
@@ -18,347 +19,249 @@ width:100%;
 height:100px;
 
 display:flex;
-align-items:center;
 justify-content:center;
-
-padding:0 120px;
+align-items:center;
 
 background:#fff;
+padding:0 129px;
 
 position:sticky;
 top:0;
+z-index:1000;
 
-z-index:1000;   /* ADD THIS */
-
-box-shadow:0 3px 7px rgba(0,0,0,0.05);
+box-shadow:
+0 80px 23px rgba(0,0,0,0.00),
+0 51px 21px rgba(0,0,0,0.00),
+0 29px 17px rgba(0,0,0,0.02),
+0 13px 13px rgba(0,0,0,0.03),
+0 3px 7px rgba(0,0,0,0.03);
 }
 
-.container{
+/* NAV */
+
+.nav{
 width:100%;
 max-width:1920px;
-
 display:flex;
 align-items:center;
 }
 
-/* LOGO */
+/* NAV LINKS */
 
-.logo img{
-width:242px;
-height:42px;
-}
-
-/* NAVIGATION */
-
-.nav-links{
+.nav ul:first-of-type{
 display:flex;
 align-items:center;
 gap:40px;
-
 list-style:none;
-
-margin-left:120px;
+margin-left:129px;
 }
 
-.nav-links a{
+.nav ul:first-of-type li a{
 display:flex;
 align-items:center;
 gap:6px;
-
 text-decoration:none;
-
 color:#1E1F20;
-
-font-size:18px;
+font-size:24px;
+font-weight:400;
 }
 
-/* ICONS */
+/* NAV ICONS */
 
-.nav-icons{
+.nav ul:last-of-type{
 display:flex;
 align-items:center;
 gap:16px;
-
 list-style:none;
-
 margin-left:auto;
 }
 
-.nav-icons img{
+.nav ul:last-of-type img{
 width:24px;
 cursor:pointer;
 }
-/* ================= EGIFT HERO ================= */
+
+/* ================= HERO ================= */
 
 .egift-hero{
-
 width:100%;
 height:700px;
 
-background-image:url("./Assets/egiftcardbanner.jpg");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+background:url("./Assets/egiftcardbanner.jpg") center/cover no-repeat;
 
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 
 position:relative;
 }
-
-/* DARK OVERLAY */
 
 .egift-hero::before{
 content:"";
 position:absolute;
 inset:0;
-
 background:rgba(0,0,0,0.35);
 }
 
-/* TEXT */
-
 .hero-content{
-
 position:relative;
 z-index:2;
-
 text-align:center;
-
 color:#fff;
-
 display:flex;
 flex-direction:column;
 gap:24px;
 }
 
 .hero-content h1{
-
 font-family:"Manrope";
 font-size:64px;
 font-weight:600;
 }
 
 .hero-content p{
-
 font-size:24px;
 max-width:700px;
 line-height:34px;
 }
+
 /* ================= BREADCRUMB ================= */
 
 .breadcrumb{
-
-padding:40px 120px;
-
-font-family:"Inter", sans-serif;
+padding:30px 120px;
 font-size:16px;
-font-weight:400;
-
-display:flex;
-align-items:center;
-gap:6px;
-
 color:#8B8B8B;
 }
 
-.breadcrumb a{
-text-decoration:none;
-color:#8B8B8B;
-}
-
-.breadcrumb a:hover{
-color:#1E1F20;
-}
-
-.breadcrumb .current{
-color:#1E1F20;
-}
-/* ================= EGIFT TITLE ================= */
+/* ================= TITLE ================= */
 
 .egift-title-section{
-
-padding-top: 40px;
-padding-bottom: 40px;
-
-text-align: center;
+padding:40px 0;
+text-align:center;
 }
 
 .egift-title{
-
-color: #434547;
-
-font-family: "Manrope", sans-serif;
-
-font-size: 56px;
-
-font-weight: 500;
-
-letter-spacing: 0.055px;
-
-text-transform: capitalize;
-
-margin-bottom: 16px;
+font-family:"Manrope";
+font-size:56px;
+font-weight:500;
+color:#434547;
+margin-bottom:16px;
 }
 
 .egift-subtitle{
-
-font-family: "Inter", sans-serif;
-
-font-size: 20px;
-
-color: #8B8B8B;
-
-max-width: 900px;
-
-margin: 0 auto;
-
-line-height: 32px;
+font-size:20px;
+color:#8B8B8B;
+max-width:900px;
+margin:0 auto;
+line-height:32px;
 }
-/* ================= SELECT GIFT CARD TITLE ================= */
+
+/* ================= GIFT SECTION ================= */
+
+.gift-card-section{
+padding:80px 120px;
+}
+
+/* GRID LAYOUT */
+
+.egift-layout{
+display:grid;
+grid-template-columns: auto 52px 675px;
+row-gap:24px;
+align-items:start;
+}
+
+/* HEADINGS */
+
+.gift-card-heading,
+.preview-heading{
+font-size:24px;
+font-weight:600;
+color:#525252;
+line-height:32px;
+}
+
+/* LEFT SIDE */
 
 .gift-card-images{
 display:flex;
 gap:16px;
-
 margin-top:24px;
 }
 
-/* DEFAULT CARD */
-
 .gift-card{
-
 width:160px;
 height:160px;
-
 border-radius:2px;
-
 overflow:hidden;
-
-cursor:pointer;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
+cursor:pointer;
 }
 
-/* IMAGE */
-
 .gift-card img{
-
 width:100%;
 height:100%;
-
 object-fit:cover;
-
 }
 
 /* SELECTED CARD */
 
 .gift-card.selected{
-
 border:1px solid #1E1F20;
-
 border-radius:8px;
-
 padding:10px;
-
 background:#fff;
-
 }
 
-/* SEE ALL CARD */
+/* SEE ALL */
 
 .see-all{
-
 border:1px solid #1E1F20;
-
-font-family:"Inter";
-
-font-size:16px;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
-}
-/* ================= GIFT CARD SECTION ================= */
-
-.gift-card-section{
-padding-left:120px;
-padding-right:120px;
-margin-top:80px;
-}
-
-.gift-card-heading{
-color:#525252;
-
-font-family:"Inter", sans-serif;
-font-size:24px;
-font-weight:600;
-line-height:32px;
-letter-spacing:0.023px;
-
-text-transform:capitalize;
-}
-
-/* ================= EGIFT LAYOUT ================= */
-
-.egift-main{
-display:flex;
-align-items:flex-start;
-margin-top:24px;
-}
-
-/* LEFT SIDE */
-
-.egift-left{
-display:flex;
-flex-direction:column;
+font-size:16px;
 }
 
 /* DIVIDER */
 
 .divider{
 width:1px;
-height:916px;
 background:#CFCEC2;
-margin-left:52px;
+
+height:100%;            /* 🔥 IMPORTANT */
+align-self:stretch;     /* 🔥 makes it full height */
+
+justify-self:center;
+grid-row:span 2;
 }
 
 /* RIGHT SIDE */
 
 .egift-preview{
-margin-left:52px;
-flex:1;
+display:flex;
+justify-content:flex-start;
 }
 
-/* keep this container */
 .preview-card{
 width:675px;
-height:916px;   /* 🔥 match divider height */
-
+height:916px;
 display:flex;
 align-items:flex-start;
-justify-content:center;
 }
 
-/* image inside */
 .preview-image{
 width:675px;
 height:250px;
-
 object-fit:cover;
 }
-
 
 /* ================= FOOTER ================= */
 
 .footer{
 background:#F7F7F7;
-
 padding:60px 120px;
 
 background-image:url("./Assets/kairaus-one.svg");
@@ -366,11 +269,11 @@ background-repeat:no-repeat;
 background-position:bottom right;
 }
 
+/* GRID */
+
 .footer-container{
 display:grid;
-
 grid-template-columns:2fr 1fr 1fr 1.2fr;
-
 gap:60px;
 }
 
@@ -379,6 +282,7 @@ gap:60px;
 .footer-col h3{
 font-family:"Manrope";
 font-size:24px;
+font-weight:600;
 margin-bottom:20px;
 }
 
@@ -406,7 +310,11 @@ color:#525252;
 font-size:16px;
 }
 
-/* SOCIAL ICONS */
+.footer-col ul li a:hover{
+color:#1E1F20;
+}
+
+/* SOCIAL */
 
 .socials{
 display:flex;
@@ -431,26 +339,18 @@ margin-top:15px;
 .newsletter-box input{
 width:310px;
 height:51px;
-
 border:1px solid #D6D6D6;
-
 padding:0 16px;
-
 font-size:16px;
 }
 
 .newsletter-box button{
 width:136px;
 height:53px;
-
 border-radius:8px;
-
 border:1px solid #1E1F20;
-
 background:#1E1F20;
-
 color:#fff;
-
 cursor:pointer;
 }
 
@@ -458,9 +358,7 @@ cursor:pointer;
 
 .footer-bottom{
 margin-top:40px;
-
 padding-top:20px;
-
 border-top:1px solid #ddd;
 
 display:flex;
@@ -477,4 +375,8 @@ gap:24px;
 text-decoration:none;
 color:#525252;
 font-size:16px;
+}
+
+.footer-links a:hover{
+color:#1E1F20;
 }
