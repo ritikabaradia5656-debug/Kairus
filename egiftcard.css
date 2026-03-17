@@ -245,10 +245,14 @@ display:flex;
 justify-content:flex-start;
 }
 
+/* ================= PREVIEW TEXT ================= */
+
 .preview-card{
 width:675px;
 height:916px;
+
 display:flex;
+flex-direction:column;   /* 🔥 IMPORTANT */
 align-items:flex-start;
 }
 
@@ -256,6 +260,173 @@ align-items:flex-start;
 width:675px;
 height:250px;
 object-fit:cover;
+}
+
+/* TEXT BELOW IMAGE */
+
+.preview-text{
+width:626px;
+height:64px;
+
+margin-top:24px;
+margin-left:24px;
+
+font-family:"Inter";
+font-weight:400;
+font-size:18px;
+line-height:32px;
+letter-spacing:0.1%;
+text-transform:capitalize;
+
+color:#8B8B8B;
+}
+/* ================= GIFT BOX ================= */
+
+.preview-gift-box{
+width:385px;
+height:120px;
+
+margin-top:24px;
+margin-left:145px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:24px;
+
+background:#F7F7F7;
+
+border:1px dashed #1E1F20;
+border-radius:4px;
+}
+
+/* TEXT */
+
+.gift-title{
+font-family:"Inter";
+font-size:18px;
+font-weight:500;
+}
+
+.gift-amount{
+font-family:"Inter";
+font-size:20px;
+font-weight:600;
+}
+/* ================= PREVIEW DESCRIPTION ================= */
+
+.preview-description{
+width:626px;
+height:96px;
+
+margin-top:24px;
+margin-left:24px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+/* DESCRIPTION */
+
+.desc-text{
+font-family:"Inter";
+font-weight:400;
+font-size:16px;
+line-height:32px;
+letter-spacing:0.1%;
+text-transform:capitalize;
+
+color:#8B8B8B;
+}
+
+/* VALID DATE */
+
+.valid-text{
+font-family:"Inter";
+font-weight:500;
+font-size:16px;
+line-height:32px;
+letter-spacing:0.1%;
+text-transform:capitalize;
+
+color:#8B8B8B;
+}
+/* ================= PREVIEW DIVIDER ================= */
+
+.preview-divider{
+width:626px;
+height:1px;
+
+margin-top:24px;
+margin-left:24px;
+
+background:#1E1F20;
+}
+/* ================= PREVIEW OUTER FRAME ================= */
+
+.preview-wrapper{
+width:674px;
+height:860px;
+
+background:#fff;
+
+border:1px solid #9B9B9B;
+border-radius:2px;
+
+/* spacing inside */
+padding:16px;
+
+display:flex;
+justify-content:center;
+}
+/* ================= REDEEM HEADING ================= */
+
+.redeem-heading{
+width:276px;
+height:32px;
+
+margin-top:16px;
+margin-left:24px;
+
+font-family:"Manrope";
+font-weight:600;
+font-size:20px;
+line-height:32px;
+letter-spacing:0.1%;
+text-transform:capitalize;
+
+color:#1E1F20;
+}
+
+/* ================= REDEEM TEXT ================= */
+
+.redeem-text{
+width:626px;
+height:128px;
+
+margin-top:8px;
+margin-left:24px;
+
+display:flex;
+flex-direction:column;
+gap:4px;
+}
+
+/* EACH LINE */
+
+.redeem-text p{
+font-family:"Inter";
+font-weight:400;
+font-size:16px;
+line-height:32px;
+letter-spacing:0.1%;
+text-transform:capitalize;
+
+color:#8B8B8B;
+margin:0;
 }
 /* ================= SELECT AMOUNT ================= */
 
