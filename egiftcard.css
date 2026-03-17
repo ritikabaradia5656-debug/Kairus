@@ -257,6 +257,149 @@ width:675px;
 height:250px;
 object-fit:cover;
 }
+/* ================= SELECT AMOUNT ================= */
+
+.select-amount{
+margin-top:40px;
+}
+
+.amount-heading{
+font-family:"Inter";
+font-weight:600;
+font-size:24px;
+line-height:32px;
+color:#525252;
+margin-bottom:16px;
+}
+
+.amount-options{
+display:flex;
+gap:16px;
+}
+
+.amount-options button{
+width:120px;
+height:44px;
+
+border:1px solid #D6D6D6;
+background:#fff;
+
+font-size:16px;
+cursor:pointer;
+}
+
+/* SELECTED */
+.amount-options .active{
+background:#1E1F20;
+color:#fff;
+border-color:#1E1F20;
+}
+/* ================= CUSTOM AMOUNT ================= */
+
+.custom-amount{
+width:904px;
+margin-top:24px;
+}
+
+.custom-amount input{
+width:100%;
+height:55px;
+
+border:none;
+border-bottom:1.5px solid #BAC2D1;
+
+padding:10px 0;
+font-size:16px;
+
+outline:none;
+background:transparent;
+}
+/* ================= ADD INFORMATION ================= */
+
+.add-info{
+margin-top:40px;
+}
+
+.info-heading{
+font-family:"Inter";
+font-weight:600;
+font-size:24px;
+line-height:32px;
+letter-spacing:0.1%;
+text-transform:capitalize;
+
+color:#525252;
+}
+/* ================= FORM ================= */
+
+.form-grid{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:32px;
+margin-top:24px;
+}
+
+/* GROUP */
+
+.form-group{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+/* LABEL */
+
+.form-group label{
+font-family:"Inter";
+font-weight:500;
+font-size:18px;
+line-height:100%;
+color:#1E1F20;
+}
+
+/* INPUT */
+
+.form-group input{
+width:100%;
+height:55px;
+
+border:none;
+border-bottom:1.5px solid #BAC2D1;
+
+padding:10px 0;
+font-size:16px;
+
+outline:none;
+background:transparent;
+}
+
+/* TEXTAREA FULL WIDTH */
+
+.form-group.full{
+grid-column: span 2;
+}
+
+.form-group textarea{
+width:100%;
+height:64px;
+
+border:none;
+border-bottom:1.5px solid #BAC2D1;
+
+padding:10px 0;
+font-size:16px;
+
+outline:none;
+resize:none;
+background:transparent;
+}
+
+/* PLACEHOLDER */
+
+.form-group textarea::placeholder{
+color:#8B8B8B;
+line-height:32px;
+}
 
 /* ================= FOOTER ================= */
 
