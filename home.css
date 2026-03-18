@@ -1,0 +1,232 @@
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter", sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+.container{
+  max-width:1440px;
+  margin:0 auto;
+  padding:0 80px;
+}
+
+/* ================= HEADER ================= */
+.header{
+  height:100px;
+  background:#fff;
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  width:100%;
+}
+
+.logo{
+  height:30px;
+}
+
+/* NAV LINKS */
+.nav-links{
+  display:flex;
+  gap:32px;
+  list-style:none;
+  margin-left:60px;
+}
+
+.nav-links a{
+  display:flex;
+  align-items:center;
+  gap:6px;
+
+  text-decoration:none;
+  color:#1E1F20;
+  font-size:16px;
+  position:relative;
+}
+
+/* HOVER */
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  width:0;
+  height:1px;
+  background:#1E1F20;
+  transition:0.3s;
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+/* ICONS */
+.nav-icons{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  margin-left:auto;
+}
+
+.nav-icons img{
+  width:22px;
+  cursor:pointer;
+}
+
+/* ================= HERO ================= */
+.hero{
+  height:720px;
+  background:url("./Assets/homebanner.png") center/cover no-repeat;
+  position:relative;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  color:#fff;
+
+  max-width:850px;
+  padding:0 20px;
+
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.hero-content h1{
+  font-family:"Manrope";
+  font-weight:600;
+  font-size:64px;
+  line-height:100%;
+  text-transform:capitalize;
+}
+
+.hero-content p{
+  font-size:32px;
+  line-height:42px;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+  background:#F7F7F7;
+  padding:70px 0 40px;
+
+  background-image:url("./Assets/kairaus-one.svg");
+  background-repeat:no-repeat;
+  background-position:bottom right;
+}
+
+.footer-container{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1.2fr;
+  gap:50px;
+}
+
+.footer-col h3{
+  font-family:"Manrope";
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.footer-col p{
+  font-size:14px;
+  color:#6A6A6A;
+  line-height:24px;
+}
+
+/* LINKS */
+.footer-col ul{
+  list-style:none;
+}
+
+.footer-col ul li{
+  margin-bottom:12px;
+}
+
+.footer-col a{
+  text-decoration:none;
+  color:#6A6A6A;
+  font-size:14px;
+}
+
+.footer-col a:hover{
+  color:#000;
+}
+
+/* SOCIAL */
+.socials{
+  display:flex;
+  gap:12px;
+  margin-top:20px;
+}
+
+.socials img{
+  width:32px;
+}
+
+/* NEWSLETTER */
+.newsletter-box{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:15px;
+}
+
+.newsletter-box input{
+  height:48px;
+  border:1px solid #ccc;
+  padding:0 12px;
+}
+
+.newsletter-box button{
+  height:48px;
+  width:150px;
+  background:#000;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+}
+
+/* BOTTOM */
+.footer-bottom{
+  margin-top:50px;
+  padding-top:20px;
+  border-top:1px solid #ddd;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  font-size:14px;
+  color:#666;
+}
+
+.footer-links{
+  display:flex;
+  gap:24px;
+}
