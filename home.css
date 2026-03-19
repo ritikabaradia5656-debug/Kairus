@@ -172,6 +172,44 @@
   max-width:1034px;
 }
 
+/* ================= PRODUCT SECTION ================= */
+/* ================= PRODUCT SECTION ================= */
+/* ================= PRODUCT SECTION ================= */
+.product-section{
+  padding:60px 0 120px;
+}
+
+/* WRAPPER */
+.product-wrapper{
+  max-width:1680px;
+  margin:0 auto;
+
+  display:flex;
+  justify-content:center;
+  gap:56px;
+
+  flex-wrap:nowrap;   /* 🔥 IMPORTANT */
+}
+
+/* CARD */
+.product-card{
+  width:402px;
+  height:558px;
+
+  border-radius:200px 200px 8px 8px;
+  overflow:hidden;
+
+  background:#f7f7f7;
+
+  flex-shrink:0;   /* 🔥 IMPORTANT */
+}
+
+/* IMAGE */
+.product-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 /* ================= FOOTER ================= */
 .footer{
   background:#F7F7F7;
