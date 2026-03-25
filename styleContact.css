@@ -1019,4 +1019,38 @@ width:100%;
         height: auto !important;
     }
 }
+@media (max-width: 768px) {
+
+    .form-row {
+        display: contents; 
+        /* 🔥 MAGIC LINE — removes grouping effect */
+    }
+}
+/* SMALLER BREADCRUMB ON MOBILE */
+@media (max-width: 768px) {
+
+    .breadcrumb {
+        font-size: 12px;       /* smaller text */
+        padding: 10px 20px;    /* reduce height */
+    }
+}
+@media (max-width: 768px) {
+
+    .hero-overlay {
+        align-items: flex-start;
+        text-align: left;
+
+        padding-left: 20px;   /* match section */
+        padding-right: 20px;
+
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-overlay h1,
+    .hero-overlay p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 }
