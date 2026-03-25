@@ -37,6 +37,11 @@
                 <li><a href=""><img src="./Assets/shopping_bag_24dp_E3E3E3_FILL0_wght300_GRAD0_opsz24 1.svg" alt=""></a>
                 </li>
             </ul>
+            <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
         </div>
     </header>
 
@@ -300,5 +305,13 @@
     </div>
 
 </footer>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".container ul:first-of-type");
+
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+</script>
 </body>
 </html>
