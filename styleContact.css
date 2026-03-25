@@ -1000,19 +1000,23 @@ width:100%;
     }
 }
 /* FIX INFO CARDS ON MOBILE */
+/* ===== CENTER CARDS ON MOBILE (FINAL CLEAN FIX) ===== */
+/* ===== FORCE CENTER INFO CARDS (FINAL FIX) ===== */
 @media (max-width: 768px) {
 
     .info-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;   /* center grid itself */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 16px;
+        width: 100%;
     }
 
     .info-card {
-        width: 90%;              /* not full, gives margin both sides */
-        max-width: 350px;        /* control size */
-        margin: 0 auto;          /* THIS centers it perfectly */
-        height: auto;
+        width: 90% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        height: auto !important;
     }
 }
 }
