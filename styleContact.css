@@ -1053,4 +1053,52 @@ width:100%;
         margin-right: 0;
     }
 }
+/* MOBILE FORM IMPROVEMENT */
+/* ===== PERFECT MOBILE FORM SPACING ===== */
+@media (max-width: 768px) {
+
+    /* overall form spacing */
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px; /* increased spacing */
+    }
+
+    /* each input group */
+    .form-group {
+        padding-top: 12px; /* space for label */
+    }
+
+    /* input fields */
+    .form-group input,
+    .form-group textarea {
+        padding: 16px 0; /* bigger touch area */
+        font-size: 20px;
+    }
+
+    /* label default */
+    .form-group label {
+        top: 14px;
+        font-size: 16px;
+    }
+
+    /* floating label */
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label {
+        top: -8px; /* smoother, less jump */
+        font-size: 16px;
+    }
+
+    /* textarea spacing */
+    .contact-form textarea {
+        margin-bottom: 0;
+    }
+
+    /* button spacing */
+    .contact-form button {
+        margin-top: 10px;
+    }
+}
 }
