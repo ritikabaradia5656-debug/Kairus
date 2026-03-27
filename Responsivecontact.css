@@ -1409,3 +1409,24 @@ textarea {
 
     /* your existing mobile styles */
 }
+@media (max-width: 767px) {
+
+    /* ===== BREADCRUMB ===== */
+    .breadcrumb {
+        padding: 0 16px;          /* only left-right */
+        margin-top: 24px;         /* banner → breadcrumb */
+        margin-bottom: 32px;      /* breadcrumb → next section */
+        font-size: 14px;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+        padding: 0 16px 40px 16px;  /* remove top padding */
+    }
+
+    /* ===== HEADING FIX ===== */
+    .contact-left h2 {
+        margin-top: 0;
+    }
+
+}
