@@ -1401,3 +1401,11 @@ textarea {
         height: 55px;
     }
 }
+@media (max-width: 767px) {
+
+    .contact-hero {
+        height: 600px;
+    }
+
+    /* your existing mobile styles */
+}
