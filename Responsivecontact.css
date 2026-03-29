@@ -1597,3 +1597,23 @@ textarea {
         width: 100%;
     }
 }
+/* DEFAULT (desktop) */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+/* MOBILE (small phones) */
+@media (max-width: 480px) {
+    .info-grid {
+        grid-template-columns: 1fr;   /* stack */
+    }
+}
+
+/* MEDIUM SCREENS (THIS IS YOUR CASE 👇) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr 1fr;   /* ✅ 2 cards per row */
+    }
+}
