@@ -983,9 +983,6 @@ textarea {
     .contact-section {
         padding: 40px 16px;
     }
-}
-@media (max-width: 768px) {
-
     .contact-left h2 {
         font-size: 26px;
         white-space: normal;
@@ -995,8 +992,6 @@ textarea {
         font-size: 14px;
         line-height: 22px;
     }
-}
-@media (max-width: 768px) {
 
     .info-grid {
         display: flex;
@@ -1011,8 +1006,6 @@ textarea {
         margin: 0 auto;
         height: auto;
     }
-}
-@media (max-width: 768px) {
 
     .form-row {
         flex-direction: column;
@@ -1032,14 +1025,11 @@ textarea {
         flex-direction: column;
         gap: 28px;
     }
-}
-@media (max-width: 768px) {
+
     .breadcrumb {
         padding: 16px;
         font-size: 12px;
     }
-}
-@media (max-width: 768px) {
 
     .footer {
         padding: 40px 16px;
@@ -1055,9 +1045,8 @@ textarea {
         text-align: center;
         gap: 10px;
     }
-}
+
 /* ===== FULL WIDTH INFO CARDS (MATCH FORM) ===== */
-@media (max-width: 768px) {
 
     .info-grid {
         display: flex;
